@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            width: 400px;
+            border: 1px solid black;
+            background: linear-gradient(to left ,#e99445,#6d53df );
+             a
+
+        }
+        input[type="text"],input[type="number"]{
+            background-color: rgb(178,170,170);
+            padding: 2px;
+            border: none;
+            border-radius: 5px;
+
+        }
+    </style>
+</head>
+<body>
+    <form  action="#">
+        <fieldset>
+            <legend>Basic Information</legend>
+      <label for="name">Name:</label> <input type="text" id="name"  name="name"placeholder="Enter your name" required><br>
+      <label for="fname">FatherName</label> <input type="text" id="fname " name="fname" placeholder="enter your father name">
+      <br>
+      <label for="Mname">Mother name</label><input type="text" id="Mname" name="Mname" placeholder="enter your mother name"><br>
+      <label for="age">Age</label>
+      <input type="number" id="age" name="age" min=18 max=45 placeholder="Enter your age"> <br>
+      <label for="gender">Gender</label>
+      <input type="radio" id="gender" name="gender" value="male">male
+      <input type="radio" id="gender" value="female">female
+      <input type="radio" id="gender" value="other">Other <br>
+      <label for="profile"> Profile :</label>
+      <input type="file" id="profile" name="profile" accept="image/*">
+    </fieldset>
+    <fieldset>
+        <legend>Contact Details</legend>
+        <label for="email">email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email address"><br>
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" id="phone" placeholder="enter your phone number"><br>
+        <label for="address">Address: </label>
+        <textarea name="address" id="address" cols="25"row="5"></textarea>
+    </fieldset>
+    <fieldset>
+        <legend>
+            Choice and preferences
+        </legend>
+        <label for="lang">Languages:</label>
+        <input type="checkbox" id="lang" name="lang" value="java" checked> JAVA
+        <input type="checkbox"id="lang" name="lang" value="Python">PYTHON
+        <input type="checkbox"id="lang"name="lang" value="javascript">javascript
+        <input type="checkbox"id="lang" name="lang" value="C++" disabled>C++
+
+        <label for="food">Favorite Food</label>
+        <select name="food" id="food">
+            <optgroup label="Tiffins">
+                <option value="">--Search food--</option>
+                <option value="upma">Upma</option>
+                <option value=" dosa"> Dosa</option>
+            
+            </optgroup>
+            <optgroup label="food">
+                <option value="briyani">Biriyani</option>
+            </optgroup>
+        </select>
+
+    </fieldset>
+    <!-- <button type="submit">Submit</button> 
+    <button type="reset">Reset</button> -->
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+      </form>
+</body>
+</html>

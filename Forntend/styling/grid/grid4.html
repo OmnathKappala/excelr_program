@@ -1,0 +1,62 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> grid task4</title>
+    <Style>
+        .container{
+            display:grid;
+              /* grid-template-columns: repeat(5, 1fr);
+             grid-template-rows: repeat(4, 1fr); */
+             border: 1px solid black;
+             min-height:100vh; 
+            gap: 10px;
+            grid-template-areas: "navbar navbar navbar navbar navbar"
+                                 "section section section article1 article1 "
+                                 "section section section article2 article2"
+                                 "footer footer footer footer footer";
+
+                                   
+        }
+        .navbar{
+            background-color: blue;
+            grid-area:navbar ;
+        }
+         .section{
+            background-color: brown;
+             grid-area:section;
+         }
+         .article1{
+            background-color:greenyellow;
+            grid-area:article1;
+         }
+         .article2{
+            background-color: purple;
+            grid-area:article2;
+         }
+         .footer{
+            background-color:orangered;
+             grid-area:footer;
+         }
+         .container>div{
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            color: white;
+            font-size:40px;
+            font-weight:bolder;
+            font-family: fantasy;
+         }
+    </Style>
+</head>
+<body>
+    <div class = "container">
+        <div class="navbar">Navbar</div>
+        <div class="section">Section</div>
+        <div class="article1">article1</div>
+        <div class="article2">article2</div>
+        <div class= "footer">footer</div>
+    </div>
+</body>
+</html>

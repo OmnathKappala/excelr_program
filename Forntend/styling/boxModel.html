@@ -13,15 +13,123 @@
             border-style:solid;
             border-color: black;
             border-width: 1px;
-            padding: 20px;
+            /* padding: 20px; */
             margin: 30px;
             /* box-sizing: content-box; */
             box-sizing: border-box;
+            /* padding-left: 10px;
+            padding-top: 20px;
+            padding-right: 15px;
+            /* padding-bottom: 5px; */
+             /* padding: 10px 20px 15px 5px;  top right bottom left */
+              padding: 10px 20px;
+        } 
+        img{
+            width: 500px;
+            height:300px;
+
         }
     </style>
 </head>
 <body>
-    <h1 id ="box1"> Box Model</h1>
-    <h1 id = "box1">Box Model</h1>
+    <!-- <h1 id ="box1"> Box Model</h1> -->
+    <!-- <h1 id = "box1">Box Model</h1> -->
+
+    <h1><u>Box Model</u></h1>
+    <blockquote>
+        
+        <p>
+            box model is a layout model for html elements
+             
+        </p>
+        <p> which describe the content , padding , broder and margin of the element</p>
+        <img src="box_model.png" alt="box_model">
+    </blockquote>
+    <hr>
+    <h2><u> Content</u></h2>
+    <blockquote>
+        <p> the content is a area where the text and images and videos appear</p>
+    </blockquote>
+    <h2> padding</h2>
+    <p> the padding area is the space between the content and the broder </p>
+    <p> to change the padding , use the padding property in the css</p>
+    <pre> #box1{
+          padding:20px; 
+          padding: 10px 20px;
+          padding:10px 20px 5px 15px;
+          padding-top:10px;
+          padding-bottom:5px;
+          padding-left:15px;
+          padding-right:10px;
+    }
+    </pre>
+    <hr>
+    <h2><u>broder</u></h2>
+     <blockquote>
+
+        <p> the broder area is the line/layout around the content</p>
+        <p> to change the broder , use the broder property inthe css</p>
+        <pre>
+            #box1{
+                broder:1px solid black;
+                border-width:5px;
+                border
+            }
+        </pre>
+     </blockquote>
+     <hr>
+     <h2><u>margin</u></h2>
+     <blockquote>
+        <p>the margin area is the space outside the broder</p>
+        <p>
+            to change the margin,use the margin property in the css
+        </p>
+        <pre> 
+            #box1{
+                margin:30px;
+            }
+        </pre>
+     </blockquote>
+     <h2>Note</h2>
+     <blockquote>
+     <p>
+        <pre>
+            
+             box- box-sizing property is used to include the padding and broder in the total width and height 
+             the default value is <q><b>content-box</b></q>
+             #box1{
+                box-sizing: border-box;
+
+             }
+             <ul>
+                <li> content box- width and height inculdes content only</li>
+                <li> border box- width and height inculdes padding and broder</li>
+             </ul>
+             #box1{
+                width:200px;
+                height:100px;
+                padding:20px;
+                border:4px;
+               box-sizing: content-box; /* total width = 200 +20+4+4-248px, total height = 100+20+20+4+4-148px */
+               box-sizing: border-box;/total width = 200[px, total height = 100px */
+               
+             }
+
+
+        </pre>
+     </p>
+     </blockquote>
+
+        
+     
+
+
+
+
+
+
+
+
+
 </body>
 </html>

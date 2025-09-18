@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Flex Task 3</title>
+    <style>
+        .flex-Container{
+            display: flex;
+        .flex-item{
+            border: 1px solid black;
+            height: 100px;
+            width:100px;
+            background-color: blue;
+        }
+        #four{
+            background-color: red;
+            flex-grow: 1;
+        } 
+        .flex-item:nth-child(3){
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-Container">
+        <div class ="flex-item">1</div>
+        <div class ="flex-item">2</div>
+        <div class ="flex-item">3</div>
+        <div class ="flex-item" id="four">4</div>
+        <div class ="flex-item">5</div>
+        <div class ="flex-item">6</div>
+        <div class ="flex-item">1</div>
+        <div class ="flex-item">2</div>
+        <div class ="flex-item">3</div>
+        <div class ="flex-item">4</div>
+        <div class ="flex-item">5</div>
+        <div class ="flex-item">6</div>
+        <div class ="flex-item">1</div>
+        <div class ="flex-item">2</div>
+        <div class ="flex-item">3</div>
+        <div class ="flex-item">4</div>
+        <div class ="flex-item">5</div>
+        <div class ="flex-item">6</div>
+
+    </div>
+</body>
+</html>

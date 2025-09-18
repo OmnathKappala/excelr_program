@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Css style Priority or Specificity </title>
+    <style>
+        *{
+            background-color:yellowgreen !important;
+        }
+        #div1{
+            background-color: blueviolet;
+        }
+        .div{
+            background-color: blue;
+        }
+        div{
+            background-color:red;
+        }
+    </style>
+</head>
+<body>
+    <!-- inline>id>class>element>universal -->
+    <div id="div1" class="div1" style="background-color: salmon;">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi ullam quod eos illo voluptatem! A.
+    </div>
+</body>
+</html> 
