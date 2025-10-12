@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function fetchdata(){
+        //    let result = fetch("https://jsonexamples.com/products");
+        //    console.log(result);
+
+        //    result.then(
+        //     (res)=>{
+        //         console.log(result);
+        //         let data=res.json()
+        //         console.log(data);
+        //     }
+        //    ).then(
+        //     (data)=>{
+        //         console.log(data);
+        //     }
+        //    )
+        
+          fetch("https://jsonexamples.com/products")  // promise - respone
+          .then((res)=>{
+             return res.json(); // response - body (json data) - promise - object
+          }
+        )
+        .then((res)=>{
+            // console.log(data); // printing array of product list
+            let data=res.products;
+            for(let i =0;i<=data.length;i++){
+                
+                document.write(data[i].category + "--"+ data[i].title + "<br>");
+            }
+
+
+
+        }
+    );
+         
+
+        }
+        fetchdata();
+    </script>
+</body>
+</html>

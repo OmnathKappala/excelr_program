@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let obj1={
+            "name":'vishal',
+            "age":22
+        }
+        let obj2={
+            "phn":1234,
+            "name":"raj"
+        }
+        console.log(obj1);
+        console.log(obj2);
+
+
+        let merge=Object.assign(obj2,obj1);
+        console.log(merge);
+
+        let merge1={...obj1,...obj2}; //spread operator
+        console.log(merge1);
+
+        obj1.state="AndhraPradesh";
+        console.log(obj1);
+
+        delete obj1.state; // deleting the object.
+        console.log(obj1);
+
+// converting javasrcipt object into json object
+        let json=JSON.stringify(obj1);
+        console.log(json);
+
+        // converting json object into javascript object
+
+        let javascriptObj=JSON.parse(json);
+        console.log(javascriptObj);
+
+        // destructing
+
+
+        let {userName , userAge}=javascriptObj;
+        let user=javascriptObj.name;
+        userName=javascriptObj.name;
+        userAge=javascriptObj.age;
+        console.log(userName);
+        console.log(userAge);
+        console.log(obj1);
+        console.log(user);
+
+
+    </script>
+</body>
+</html>

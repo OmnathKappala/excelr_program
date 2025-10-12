@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let mobile={
+            "brand":"realme",
+            price:16000,
+            'color':"silver"
+        };
+        console.log(mobile);
+        console.log(mobile.price); // dot notation
+        console.log(mobile["price"]); // bracket notation
+
+        for(let key in mobile){
+            console.log(key,"-",mobile[key]);
+        }
+
+
+
+        // obkect creation - constructor function
+
+
+        function Person(name,age,phone){
+            this.name=name;
+            this.age=age;
+            this.phone=phone;
+        }
+        let p1=new Person("raj" , 34, 12345);
+        let p2 =new Person('rani',34,12345678);
+
+        console.log(p1);
+        console.log(p2);
+
+
+
+        // creating a oject with a class
+
+        class laptop{
+            constructor(brand,price,color){
+                this.brand=brand;
+                this .price=price;
+                this.color=color;
+            }
+        }
+        let l1 = new laptop('hp victus',43000,'balck');
+
+        console.log(l1);
+
+
+        
+
+    </script>
+</body>
+</html>

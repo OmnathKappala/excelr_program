@@ -1,0 +1,64 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    height:100vh;
+    border:1px solid black;
+    display:grid;
+    grid-template-areas: "nav nav nav"
+                          "main main main"
+                          "main main main"
+                          "footer footer footer";
+}
+nav{
+    grid-area:nav;
+    background-color: blueviolet;
+
+}
+main{
+    grid-area:main;
+    background-color: brown;
+    display: grid;
+    grid-template-areas: "section section figure" 
+                         "section section figure";
+
+}
+section{
+    grid-area: section;
+    border:1px solid black;
+    display: grid;
+    grid-template-areas: "one one"
+                          "two two";
+}
+section article{
+    border:2px solid black;
+    height: 100px;
+    margin:5px;
+    padding:5px;
+    border-radius:8px;
+}
+
+.one{
+    grid-area:one;
+    background-color: aqua;
+    height:100px;
+
+}
+.two{
+    grid-area:two;
+    background-color: bisque;
+    height:100px;
+}
+figure{
+    grid-area: figure;
+
+}
+
+
+
+footer{
+grid-area:footer;
+background-color: darkgreen;
+}

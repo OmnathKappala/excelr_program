@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> transition Task2</title>
+    <style>
+        div{
+            width:200px;
+            height:200px;
+            border:1px soild black;
+            background-color: lightgoldenrodyellow;
+            font-size: 50px;
+            margin:10px;
+        }
+        .ease{
+            transition: all 3s ease 0s;
+        }
+        .ease-in{
+            transition: all 3s ease-in 1s;
+        }
+        .ease-out{
+            transition: all 3s ease-out 2s;
+        }
+        .ease-in-out{
+            transition: all 3s ease-in-out 3s;
+        }
+        .linear{
+            transition:all 3s linear 4s;
+        }
+        .cubic-bezier{
+            transition: all 3s cubic-bezier(0.75,0.82,0.165,1) 5s;
+        }
+        .steps{
+            transition: all 3s steps(6) 6s;
+        }
+        div:hover{
+            width: 500px;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="ease">ease</div>
+    <div class="ease-in">ease-in</div>
+    <div class="ease-out">ease-out</div>
+    <div class="ease-in-out">ease-in-out</div>
+    <div class="linear">linear</div>
+    <div class="cubic-bezier">cubic-bezier</div>
+    <div class="steps">Steps</div>
+</body>
+</html>

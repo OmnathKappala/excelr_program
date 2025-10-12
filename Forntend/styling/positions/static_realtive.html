@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Realtive task</title>
+    <style>
+        div{
+            width:200px;
+            height:200px;
+            border:1px solid black;
+            font-size:30px;
+        }
+        .static{
+            background-color: yellowgreen;
+        }
+        .realtive{
+            background-color: red;
+            position: relative;
+           
+            left: 40px;
+            z-index: 2;
+        }
+        .realtive2{
+            background-color: blue;
+            position: relative;
+        
+            left: 70px;
+            z-index: 5;
+        }
+        .realtive3{
+            background-color: chocolate;
+            position: relative;
+          
+            left: 100px;
+            z-index: 9;
+        }
+    </style>
+</head>
+<body>
+    <div class="static">Static</div>
+
+
+    <div class="realtive">Realtive</div>
+    <div class="realtive2">Realtive</div>
+    <div class="realtive3">Realtive</div>
+</body>
+</html>

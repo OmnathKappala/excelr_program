@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transitions</title>
+    <style>
+        div{
+            width:200px;
+            height: 200px;
+            border:1px solid black;
+            font-size: 40px;;
+        }
+        .with:hover{
+             background-color: blue;
+               transition: all 2s ease 1s;  
+              transform:  rotate(360deg);
+              height:300px;
+              width:300px;
+              
+             
+        }
+        .without{
+            background-color: brown;
+
+        }
+        .without:hover{
+            background-color: chartreuse;
+        }
+    </style>
+</head>
+<body>
+    <div class="with">with</div>
+    <div class="without">withOut</div>
+</body>
+</html>
