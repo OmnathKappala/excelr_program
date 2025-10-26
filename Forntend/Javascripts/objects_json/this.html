@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // console.log(this);
+
+        // let obj1={
+        //     name:"array",
+        //     age:22,
+        //     getDetails: function (){
+        //         console.log(this);
+        //         console.log(this.name + " "+this.age);
+        //     },
+        // };
+
+
+        function details(args1 , args2){
+            console.log(args1,args2, `${this.name} to object session`);
+        }
+        details("h1","hello");
+        let obj={
+            name:'raj',
+            age:"24"
+        }
+        details.call(obj,'h1','hello');
+        details.apply(obj,["h1",'hello']);
+      let newDetails =  details.bind(obj,"hi",'hello');
+      newDetails();
+    </script>
+</body>
+</html>

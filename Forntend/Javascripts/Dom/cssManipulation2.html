@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .highlight{
+            background-color: black;
+            color: white;
+            height:200px;
+            width: 50px;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="add" onclick="addStyle()">Click me to add Style</div>
+    <div id="remove" class="highlight" onclick="removeStyle()">click me delete</div>
+    <br>
+    <div id="toggle" onclick="toggleStyle()">Click me to Toggle Style</div>
+
+
+    <script>
+        function addStyle(){
+            let div=document.getElementById('add');
+            add.classList.add("highlight");
+        }
+        function removeStyle(){
+            let remove=document.getElementById('remove');
+            remove.classList.remove('highlight');
+        }
+
+        function toggleStyle(){
+            let toggle=document.getElementById('toggle');
+            toggle.classList.toggle("highlight");
+             
+        }
+    </script>
+</body>
+</html>

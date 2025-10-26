@@ -1,0 +1,35 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Submission</title>
+</head>
+<body>
+  <form id="form">
+    <input type="text" id="name" placeholder="Enter name"><br><br>
+    <input type="text" id="age" placeholder="Enter age"><br><br>
+    <input type="text" id="email" placeholder="Enter email"><br><br>
+    <input type="tel" id="phone" placeholder="Enter phone"><br><br>
+    <button type="submit">Submit</button>
+  </form>
+
+  <script>
+    const form = document.getElementById("form");
+
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+      console.log("clicked");
+
+      const obj = {
+        name: document.getElementById('name').value,
+        age: document.getElementById('age').value,
+        email: document.getElementById('email').value,
+        phone: document.getElementById('phone').value
+      };
+
+      console.log(obj);
+    });
+  </script>
+</body>
+</html>

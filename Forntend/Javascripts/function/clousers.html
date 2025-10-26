@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">Click</button>
+    <div id="data"></div>
+    <script>
+        function father(){
+            let property="Banglore";
+            console.log(property,"father");
+        
+      return  function son(){
+            
+            console.log(property , "in som");
+        }
+    }
+    let res=father();
+    res(); 
+
+
+    function counter(){
+        let count =0;
+        return function incermentCounter(){
+            count++;
+            document.getElementById("data").innerText=count;
+        };
+    }
+    let counter1=counter();
+    document.getElementById("btn").addEventListener('click',counter1);
+    document.getElementById("sub").addEventListener('click',counter1);
+    document.getElementById("add").addEventListener('click',counter1);
+    
+    
+    </script>
+</body>
+</html>

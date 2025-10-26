@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color:lightgray;
+            min-height: 400px;
+        }
+        .item{
+            height:50px;
+            width:50px;
+            border:1px solid black;
+        }
+        .even{
+            background-color:red;
+        }
+        .odd{
+            background-color:blue;
+        }
+    </style>
+</head>
+<body>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione a eveniet necessitatibus illo! Et facere eos doloremque iure. Quod, distinctio placeat. Adipisci corrupti dolorum in tempore quae eum praesentium id.
+    </div> 
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+    </div>
+
+    <script>
+        // inline-styling 
+         let div= document.querySelector('div');
+         div.style.color='green';
+
+
+
+         let arr=document.getElementsByClassName('item');
+         for(let i=0;i<arr.length;i++){
+            if(i%2==0){
+                 arr[i].classList.add('odd');
+
+            
+            }
+            else{
+                arr[i].classList.add('even');
+            }
+
+         }
+    </script>
+</body>
+</html>

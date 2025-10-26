@@ -6,6 +6,29 @@
     <title>Document</title>
 </head>
 <body>
+    <script>
+        let str = "Hi Weclome To Javascript Session";
+let arr = str.split(" "); // ["hi", "weclome"]
+let result = "";
+
+for (let i = 0; i < arr.length; i++) { 
+    let word = arr[i];
+    let reversedWord = "";
+
     
+    for (let j = word.length - 1; j >= 0; j--) {
+        reversedWord += word[j];
+    }
+
+    result += reversedWord;
+
+    
+    if (i !== arr.length - 1) {
+        result += " ";
+    }
+}
+
+console.log(result);
+    </script>
 </body>
 </html>

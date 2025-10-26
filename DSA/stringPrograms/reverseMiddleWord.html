@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let str= "Hi Welcome To Javascript Session";
+        let arr=str.split(" ");
+         let sentence="";
+         for(let i=0;i<arr.length;i++){
+            let word=arr[i];
+             
+                let char=word.split("");
+                let reverse="";
+                for(let j=1;j<char.length-1;j++){
+                    reverse=char[j]+reverse;
+                }
+                sentence=sentence+char[0]+reverse+char[char.length-1]+" ";
+            }
+         
+    </script>
+</body>
+</html>

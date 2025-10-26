@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grand{
+            height:400px;
+            width:400px;
+            background-color: lightgray;
+        }
+        .father{
+            height:300px;
+            width:300px;
+            background-color:blue;
+        }
+        .son{
+            height:200px;
+            width:200px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="grand">
+        <div class="father">
+            <div class="son">
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let grand=document.querySelector('.grand');
+        let father=document.querySelector('.father');
+        let son =document.querySelector('.son');
+
+        
+  
+// event propagation from parent to child event capturing. child to partent - bubbling.
+grand.addEventListener('click', () => {
+    console.log('grand');
+},true);
+
+son.addEventListener('click', (event) => {
+    console.log('son');
+    event.stopPropagation();
+    
+},true);
+
+father.addEventListener('click', () => {
+    console.log('father');
+},true);
+
+    </script>
+</body>
+</html>
