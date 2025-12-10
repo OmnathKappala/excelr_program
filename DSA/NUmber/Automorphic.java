@@ -20,7 +20,7 @@
     }
 
     public static void main(String[] args) {
-        int n = 34;
+        int n = 76;
 
         if (isAutomorphic(n)) {
             System.out.println(n + " is an Automorphic number.");
